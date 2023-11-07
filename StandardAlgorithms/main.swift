@@ -13,5 +13,7 @@ print("Hello, World!")
 var a = 5
 a += 15
 
+let b = "HI EVERYONE I'M LOSING MY VOICE"
+
 print("A is now \(a)")
 
