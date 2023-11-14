@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC612DAC2B038E0E0053676A /* StandardAlgorithms.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StandardAlgorithms.xctestplan; sourceTree = "<group>"; };
 		DCCFE8412AFA4834009F47F0 /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCFE8442AFA4834009F47F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DCCFE84F2AFA52CF009F47F0 /* StandardAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +55,7 @@
 		DCCFE8382AFA4834009F47F0 = {
 			isa = PBXGroup;
 			children = (
+				DC612DAC2B038E0E0053676A /* StandardAlgorithms.xctestplan */,
 				DCCFE8432AFA4834009F47F0 /* StandardAlgorithms */,
 				DCCFE8502AFA52CF009F47F0 /* StandardAlgorithmTests */,
 				DCCFE8422AFA4834009F47F0 /* Products */,
