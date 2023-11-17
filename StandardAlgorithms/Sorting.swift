@@ -17,7 +17,52 @@ class Sorting{
         }
     }
     
+    func mergeSort(_ numbers: [Int]) -> [Int] {
+        if numbers.count <= 1 {
+            return numbers
+        }
+        
+        let middleNum = (numbers.count)/2
+        let leftBlob = mergeSort(Array(numbers[...(middleNum-1)]))
+        let rightBlob = mergeSort(Array(numbers[middleNum...]))
+        
+        var iLeft = 0
+        var iRight = 0
+        var sorted = [Int]()
+        
+        while iLeft < leftBlob.count && iRight < rightBlob.count{
+            let tempLeft = leftBlob[iLeft]
+            let tempRight = rightBlob[iRight]
+            
+            if tempLeft < tempRight{
+                sorted.append(tempLeft)
+                iLeft += 1
+            }
+            else if tempRight < tempLeft{
+                sorted.append(tempRight)
+                iRight += 1
+            }
+            else {
+                sorted.append(tempLeft)
+                sorted.append(tempRight)
+                iLeft += 1
+                iRight += 1
+            }
+            
+        }
+
+        sorted += leftBlob[iLeft...]
+        sorted += rightBlob[iRight...]
+        
+        return sorted
+    }
+    
     func quickSort(_ numbers: [Int]) -> [Int] {
+        
+        if numbers.count <= 1{
+            return numbers
+        }
+        
         let pivot = numbers[0]
         var left = [Int]()
         var right = [Int]()
@@ -31,11 +76,18 @@ class Sorting{
                 right.append(currentNum)
             }
         }
+
+
+        let leftBlob = quickSort(left)
+        let rightBlob = quickSort(right)
+        
         
         var combinedNums: [Int] = [Int]()
-        combinedNums.append(contentsOf: left)
+        combinedNums.append(contentsOf: leftBlob)
         combinedNums.append(pivot)
-        combinedNums.append(contentsOf: right)
+        combinedNums.append(contentsOf: rightBlob)
+        
+
         
         return(combinedNums)
     }
