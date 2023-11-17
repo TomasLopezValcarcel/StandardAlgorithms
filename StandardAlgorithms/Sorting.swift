@@ -81,16 +81,21 @@ class Sorting{
         let leftBlob = quickSort(left)
         let rightBlob = quickSort(right)
         
-        
+    
         var combinedNums: [Int] = [Int]()
         combinedNums.append(contentsOf: leftBlob)
         combinedNums.append(pivot)
         combinedNums.append(contentsOf: rightBlob)
         
-
-        
         return(combinedNums)
     }
+    
+    func insertionSort(_ numbers: [Int]) -> [Int] {
+        let sorted = [Int]()
+        
+        return sorted
+    }
+
     
 }
 
