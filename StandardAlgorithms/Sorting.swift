@@ -9,12 +9,18 @@ import Foundation
 
 class Sorting{
     func bubbleSort(_ numbers: [Int]) -> [Int] {
-        if numbers[0] == 2 {
-            return [1,2,3,4,7]
+        var sorted = numbers
+        for i in 0...sorted.count-2{
+            for j in 0...sorted.count - i - 2{
+                if sorted[j+1] < sorted[j] {
+                    let tempJ = sorted[j]
+                    sorted[j] = sorted[j+1]
+                    sorted[j+1] = tempJ
+                }
+            }
         }
-        else {
-            return [1,3,4,5,7]
-        }
+        
+        return sorted
     }
     
     func mergeSort(_ numbers: [Int]) -> [Int] {
@@ -91,7 +97,24 @@ class Sorting{
     }
     
     func insertionSort(_ numbers: [Int]) -> [Int] {
-        let sorted = [Int]()
+        if numbers.count <= 1{
+            return numbers
+        }
+        
+        var sorted = numbers
+
+        
+        for i in 1...numbers.count-1{
+            let currentNum = numbers[i]
+            var num = i-1
+            
+            while num >= 0 && sorted[num] > currentNum{
+                sorted[num + 1] = sorted[num]
+                num -= 1
+            }
+            
+            sorted[num+1] = currentNum
+        }
         
         return sorted
     }
