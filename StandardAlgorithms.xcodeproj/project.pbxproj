@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C3A1CDC62B07D45A00B8302D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1CDC52B07D45A00B8302D /* Searching.swift */; };
 		C3A1CDC72B07D45A00B8302D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1CDC52B07D45A00B8302D /* Searching.swift */; };
+		C3A1CDCE2B10E19200B8302D /* SearchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1CDCC2B10E19200B8302D /* SearchingTests.swift */; };
 		DCCFE8452AFA4834009F47F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCFE8442AFA4834009F47F0 /* main.swift */; };
 		DCE8314E2AFE950400D03134 /* SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8314D2AFE950400D03134 /* SortingTests.swift */; };
 		DCE831502AFE965700D03134 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8314F2AFE965700D03134 /* Sorting.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		C3A1CDC52B07D45A00B8302D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
+		C3A1CDCC2B10E19200B8302D /* SearchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingTests.swift; sourceTree = "<group>"; };
 		DC612DAC2B038E0E0053676A /* StandardAlgorithms.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StandardAlgorithms.xctestplan; sourceTree = "<group>"; };
 		DCCFE8412AFA4834009F47F0 /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCFE8442AFA4834009F47F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				DCE8314D2AFE950400D03134 /* SortingTests.swift */,
+				C3A1CDCC2B10E19200B8302D /* SearchingTests.swift */,
 			);
 			path = StandardAlgorithmTests;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				C3A1CDC72B07D45A00B8302D /* Searching.swift in Sources */,
 				DCE831512AFE971300D03134 /* Sorting.swift in Sources */,
+				C3A1CDCE2B10E19200B8302D /* SearchingTests.swift in Sources */,
 				DCE8314E2AFE950400D03134 /* SortingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
